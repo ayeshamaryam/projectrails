@@ -1,0 +1,9 @@
+<div class="box">
+
+<p><strong>by <%= comment.name %>:</strong>
+              <%= comment.comment %>
+</p><br>
+<%= link_to 'Delete', [comment.post, comment], data: { turbo_confirm: "are you sure?",turbo_method: :delete } %>
+
+
+</div>

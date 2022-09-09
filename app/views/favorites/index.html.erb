@@ -1,0 +1,14 @@
+<h3> listing the favorites posts </h3>
+     <% current_user.favorites.each do |favorite| %>
+
+
+
+      You favorited this post: <%= link_to favorite.post.title,favorite.post %>
+   
+   
+   
+      <br>
+   
+   
+   
+      <% end %>
